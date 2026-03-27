@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Анастасия Събева: Елегантност, Амбиция, Блясък</title>
+    <meta name="description" content="Луксозен дигитален портрет за Анастасия Събева – модел, Мис Елеганс 2026, Playboy корица 2025, участник на International Fashion Festival Milano 2026." />
+
+    <meta property="og:title" content="Анастасия Събева: Елегантност, Амбиция, Блясък" />
+    <meta property="og:description" content="От първи конкурс на 15 г. до подиумите на Милано – Анастасия Събева е лице, което България заслужава на световната сцена." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="bg_BG" />
+    <meta property="og:image" content="anastasia-share.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Анастасия Събева – featured portrait" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Анастасия Събева: Елегантност, Амбиция, Блясък" />
+    <meta name="twitter:description" content="От първи конкурс на 15 г. до подиумите на Милано – Анастасия Събева." />
+    <meta name="twitter:image" content="anastasia-share.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #07080d;
+            --bg2: #0f1118;
+            --paper: rgba(255,255,255,.05);
+            --paper-2: rgba(255,255,255,.10);
+            --line: rgba(255,255,255,.13);
+            --text: #f0ece2;
+            --muted: rgba(240,236,226,.68);
+            --gold: #c9a44e;
+            --gold-2: #e2c07a;
+            --gold-soft: rgba(201,164,78,.20);
+            --rose: #b87ca0;
+            --shadow: 0 28px 64px rgba(0,0,0,.52);
+            --radius: 20px;
+        }
+
+        [data-theme="light"] {
+            --bg: #f5f0e8;
+            --bg2: #fffcf7;
+            --paper: rgba(30,20,10,.05);
+            --paper-2: rgba(30,20,10,.09);
+            --line: rgba(30,20,10,.13);
+            --text: #1a140c;
+            --muted: rgba(26,20,12,.66);
+            --gold: #9a6f1e;
+            --gold-2: #b88a2f;
+            --gold-soft: rgba(154,111,30,.16);
+            --rose: #8a4d72;
+            --shadow: 0 20px 48px rgba(20,14,6,.14);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+            color: var(--text);
+            line-height: 1.8;
+            background-color: var(--bg);
+            background-image:
+                radial-gradient(ellipse 800px 600px at 5% 0%, rgba(201,164,78,.13), transparent 60%),
+                radial-gradient(ellipse 700px 500px at 95% 20%, rgba(184,124,160,.10), transparent 55%),
+                radial-gradient(ellipse 1000px 400px at 50% 100%, rgba(201,164,78,.06), transparent 60%),
+                linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+            background-attachment: scroll;
+            min-height: 100vh;
+        }
+
+        .wrap { max-width: 1140px; margin: 0 auto; padding: 32px 20px 80px; }
+
+        .topbar {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .kicker {
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            font-size: 10.5px;
+            font-weight: 400;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 60px);
+            font-weight: 300;
+            line-height: 1.06;
+            letter-spacing: .015em;
+            font-style: italic;
+        }
+
+        h1 em { font-style: normal; font-weight: 600; color: var(--gold-2); }
+
+        .deck {
+            margin: 14px 0 0;
+            max-width: 62ch;
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-size: 14.5px;
+            font-weight: 300;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .pill, .lang-select {
+            border: 1px solid var(--line);
+            background: linear-gradient(160deg, var(--paper-2), var(--paper));
+            color: var(--text);
+            box-shadow: var(--shadow);
+            border-radius: 999px;
+            min-height: 40px;
+            padding: 9px 16px;
+            font-size: 12.5px;
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-weight: 400;
+            letter-spacing: .04em;
+        }
+
+        .pill {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform .1s, border-color .22s, background .22s, box-shadow .22s;
+        }
+        .pill:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: 0 8px 24px rgba(201,164,78,.18); }
+
+        .dot {
+            width: 7px; height: 7px; border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 0 4px var(--gold-soft);
+            flex-shrink: 0;
+        }
+        .dot.rose {
+            background: var(--rose);
+            box-shadow: 0 0 0 4px rgba(184,124,160,.18);
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            background: linear-gradient(170deg, var(--paper-2) 0%, var(--paper) 100%);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+        }
+
+        .hero-visual { position: relative; }
+        .hero-visual img {
+            display: block; width: 100%; height: 100%;
+            object-fit: cover; min-height: 640px;
+        }
+
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to right, transparent 55%, var(--bg) 100%);
+            pointer-events: none;
+        }
+
+        [data-theme="light"] .hero-overlay {
+            background: linear-gradient(to right, transparent 55%, var(--bg2) 100%);
+        }
+
+        .hero-badge {
+            position: absolute;
+            left: 20px; bottom: 20px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,.22);
+            background: rgba(8,9,14,.38);
+            color: #fff;
+            backdrop-filter: blur(12px);
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+        }
+
+        .hero-copy { padding: 36px 32px 36px; }
+
+        .lead {
+            font-size: 21px;
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 22px;
+            line-height: 1.6;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 24px 0 14px;
+        }
+
+        .meta-box {
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 14px 16px;
+            background: rgba(255,255,255,.03);
+        }
+        .meta-box:hover { border-color: var(--gold-soft); background: var(--gold-soft); }
+
+        .meta-label {
+            display: block;
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-size: 10px;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .meta-value { font-size: 16px; font-weight: 400; line-height: 1.45; }
+
+        article { padding: 8px 32px 36px; }
+
+        h2 {
+            margin: 30px 0 12px;
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-size: 10.5px;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        h2::before { content: '⟡ '; opacity: .6; }
+
+        p { margin: 12px 0; font-size: 18.5px; font-weight: 300; }
+
+        .quote {
+            margin: 28px 0;
+            padding: 22px 24px 22px 26px;
+            border-left: 2px solid var(--gold);
+            border-radius: 16px;
+            background: var(--gold-soft);
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        figure { margin: 22px 0; }
+
+        .figure-card {
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            background: rgba(255,255,255,.03);
+            transition: transform .22s, box-shadow .22s;
+        }
+        .figure-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,.3); }
+
+        .figure-card img { width: 100%; display: block; height: auto; }
+
+        figcaption {
+            padding: 10px 14px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: .04em;
+            font-style: italic;
+        }
+
+        .gallery-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 22px 0;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold-soft), transparent);
+            margin: 36px 0;
+            border: none;
+        }
+
+        .footer-note {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-family: 'Jost', ui-sans-serif, sans-serif;
+            font-size: 12.5px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 880px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            .hero-visual img { min-height: 480px; }
+            .hero-overlay { background: linear-gradient(to bottom, transparent 50%, var(--bg) 100%); }
+        }
+
+        @media (max-width: 680px) {
+            .meta, .gallery-2 { grid-template-columns: 1fr; }
+            .hero-copy, article { padding-left: 20px; padding-right: 20px; }
+            h1 { font-size: 34px; }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+
+<div class="wrap">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div>
+            <p class="kicker" data-i18n="kicker">High-Life / Digital Portrait</p>
+            <h1 data-i18n="title">Анастасия Събева:<br><em>Елегантност, Амбиция, Блясък</em></h1>
+            <p class="deck" data-i18n="deck">Луксозен дигитален портрет за жена, която превърна страстта към модата в мисия, подиума – в естествена среда, а мечтата за световна сцена – в реален следващ ход.</p>
+        </div>
+
+        <div class="actions">
+            <button class="pill" id="musicBtn" type="button" title="Пусни/спри музика">
+                <span class="dot rose" aria-hidden="true"></span>
+                <span id="musicLabel">Музика: OFF</span>
+            </button>
+            <button class="pill" id="themeBtn" type="button" title="Смяна на тема">
+                <span class="dot" aria-hidden="true"></span>
+                <span data-i18n="theme">Тема</span>
+            </button>
+            <select class="lang-select" id="langSelect" aria-label="Избор на език">
+                <option value="bg">Български</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- MAIN CARD -->
+    <section class="card">
+        <div class="hero-grid">
+            <div class="hero-visual">
+                <img src="anastasia-01.jpg" alt="Анастасия Събева – portrait" />
+                <div class="hero-overlay" aria-hidden="true"></div>
+                <div class="hero-badge" data-i18n="badge">Model · Miss Elegance · Playboy</div>
+            </div>
+
+            <div class="hero-copy">
+                <p class="lead" data-i18n="lead">Има жени, за които модата е облекло. За Анастасия Събева модата е език — с който заявява кой е, накъде върви и какво е способна да постигне.</p>
+
+                <div class="meta">
+                    <div class="meta-box">
+                        <span class="meta-label" data-i18n="metaStartLabel">Начало</span>
+                        <span class="meta-value" data-i18n="metaStartValue">2014 · на 15 години</span>
+                    </div>
+                    <div class="meta-box">
+                        <span class="meta-label" data-i18n="metaKnownLabel">Разпознаваема с</span>
+                        <span class="meta-value" data-i18n="metaKnownValue">Моделство · Титли · Milano</span>
+                    </div>
+                    <div class="meta-box">
+                        <span class="meta-label" data-i18n="metaTitlesLabel">Акцент 2025–26</span>
+                        <span class="meta-value" data-i18n="metaTitlesValue">Playboy корица · Мис Елеганс</span>
+                    </div>
+                    <div class="meta-box">
+                        <span class="meta-label" data-i18n="metaRoleLabel">Идентичност</span>
+                        <span class="meta-value" data-i18n="metaRoleValue">Модел · Дизайнер · Актриса</span>
+                    </div>
+                </div>
+
+                <p data-i18n="intro1">От своя първи конкурс на 15 години до корица на Playboy, подиумите на Милано и титлата Мис Елеганс 2026 — нейният път е доказателство, че истинският блясък се изгражда, не се случва.</p>
+                <p data-i18n="intro2">С над десет години опит в модния бизнес, поредица от престижни титли и участие на International Fashion Festival Milano 2026, Анастасия Събева е лице, което България заслужава да види на световната сцена.</p>
+            </div>
+        </div>
+
+        <article>
+            <figure class="figure-card">
+                <img src="anastasia-02.jpg" alt="Анастасия Събева – editorial" loading="lazy" />
+                <figcaption data-i18n="caption1">Дванадесет години пред камерата — всеки кадър е урок, всяка титла е стъпало нагоре.</figcaption>
+            </figure>
+
+            <h2 data-i18n="section1Title">Профил, изграден с постоянство</h2>
+            <p data-i18n="section1P1">Анастасия Събева е модел, чийто път в модната индустрия започва още в тийнейджърска възраст. На 15 години участва в първия си конкурс и печели трето място — начало, което разпалва амбиция, а не я гаси.</p>
+            <p data-i18n="section1P2">Следват второ и трето място в последователни конкурси, участие в Мис Туризъм 2015 и още две надпревари същата година. Всяка поява е нова репетиция за голямата сцена.</p>
+
+            <div class="quote" data-i18n="quote">„Бих искала да представям България на международен и световен конкурс — и да снимам за дизайнери тук и в чужбина."</div>
+
+            <h2 data-i18n="section2Title">Playboy, Супер Модел и Мис Елеганс</h2>
+            <p data-i18n="section2P1">2017 г. е повратна точка — участието в Мис Плеймейт поставя Анастасия на картата на сериозната модна сцена. Осем години по-късно, през 2025 г., тя е на корицата на Playboy и с личен календар — признание, което говори само за себе си.</p>
+            <p data-i18n="section2P2">Титлата Супер Модел 2025 и Мис Елеганс 2026 затвърждават образа: не е въпрос на шанс, а на характер, работа и неугасваща страст към съвършенството.</p>
+
+            <div class="gallery-2">
+                <figure class="figure-card">
+                    <img src="anastasia-03.jpg" alt="Анастасия Събева – contest glamour" loading="lazy" />
+                    <figcaption data-i18n="caption2">Мис Елеганс 2026 — елегантността като философия, не само като стил.</figcaption>
+                </figure>
+                <figure class="figure-card">
+                    <img src="anastasia-04.jpg" alt="Анастасия Събева – Milano fashion festival" loading="lazy" />
+                    <figcaption data-i18n="caption3">International Fashion Festival Milano 2026 — България на световния подиум.</figcaption>
+                </figure>
+            </div>
+
+            <hr class="divider" />
+
+            <h2 data-i18n="section3Title">Лице на организации и медии</h2>
+            <p data-i18n="section3P1">Анастасия е избирана за лице на организации и медии — доверие, което се печели единствено с консистентност, професионализъм и визия. Нейното присъствие надхвърля фотосесията — то е послание.</p>
+            <p data-i18n="section3P2">Милано 2026 е логично продължение: International Fashion Festival е сцената, на която световната мода открива следващото голямо лице. Анастасия вече е там.</p>
+
+            <h2 data-i18n="section4Title">Дизайнер, актриса и мечтател с план</h2>
+            <p data-i18n="section4P1">Зад обектива и зад прожектора се крие жена с конкретни цели. Анастасия иска да стане дизайнер — да създава облеклата, не само да ги носи. Актьорското майсторство е още един хоризонт, към който гледа с нескрит интерес.</p>
+            <p data-i18n="section4P2">По образование завършена специалност Туризъм, тя носи в себе си усещане за свят без граници — и го изразява с всяка стъпка на подиума и всяка поза пред камерата.</p>
+
+            <figure class="figure-card">
+                <img src="anastasia-05.jpg" alt="Анастасия Събева – close portrait" loading="lazy" />
+                <figcaption data-i18n="caption4">Playboy корица 2025 — моментът, когато страстта среща международното признание.</figcaption>
+            </figure>
+
+            <h2 data-i18n="section5Title">Следващата глава: световната сцена</h2>
+            <p data-i18n="section5P1">Анастасия Събева не е само поредното красиво лице в модната индустрия. Тя е проект в ход — жена, която последователно, стъпало по стъпало, гради платформата, от която ще представи България пред света.</p>
+            <p data-i18n="section5P2">Нейното послание е просто: България има лица, способни да заемат световната сцена. Тя е едно от тях.</p>
+
+            <p class="footer-note" data-i18n="footer">Луксозен дигитален портрет на Анастасия Събева · High-Life Digital Portrait Series</p>
+        </article>
+    </section>
+</div>
+
+<audio id="bgMusic" preload="auto" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const body = document.body;
+        const themeBtn = document.getElementById('themeBtn');
+        const musicBtn = document.getElementById('musicBtn');
+        const musicLabel = document.getElementById('musicLabel');
+        const music = document.getElementById('bgMusic');
+        const langSelect = document.getElementById('langSelect');
+
+        // === ТЕМА ===
+        let currentTheme = localStorage.getItem('anastasia-theme') || 'dark';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeBtn.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('anastasia-theme', currentTheme);
+        });
+
+        // === МУЗИКА ===
+        let musicReady = true;
+        music.addEventListener('error', () => { 
+            musicReady = false; 
+            console.warn('song.mp3 не е намерен');
+        });
+
+        function updateMusicLabel(isPlaying) {
+            const lang = langSelect.value;
+            if (lang === 'en') {
+                musicLabel.textContent = isPlaying ? 'Music: ON' : 'Music: OFF';
+            } else {
+                musicLabel.textContent = isPlaying ? 'Музика: ON' : 'Музика: OFF';
+            }
+        }
+
+        musicBtn.addEventListener('click', async () => {
+            if (!musicReady) {
+                alert(langSelect.value === 'bg' ? 
+                    'Файлът song.mp3 не е намерен в папката.' : 
+                    'song.mp3 file not found in the folder.');
+                return;
+            }
+
+            try {
+                if (music.paused) {
+                    await music.play();
+                    updateMusicLabel(true);
+                } else {
+                    music.pause();
+                    updateMusicLabel(false);
+                }
+            } catch(e) {
+                alert(langSelect.value === 'bg' ? 
+                    'Моля, натисни отново.' : 
+                    'Please tap again.');
+            }
+        });
+
+        // === ПРЕВОДИ ===
+        const translations = {
+            bg: { /* ... всички преводи остават същите както в оригинала ... */ 
+                kicker: "High-Life / Digital Portrait",
+                title: "Анастасия Събева: Елегантност, Амбиция, Блясък",
+                deck: "Луксозен дигитален портрет за жена, която превърна страстта към модата в мисия, подиума – в естествена среда, а мечтата за световна сцена – в реален следващ ход.",
+                theme: "Тема",
+                badge: "Model · Miss Elegance · Playboy",
+                lead: "Има жени, за които модата е облекло. За Анастасия Събева модата е език — с който заявява кой е, накъде върви и какво е способна да постигне.",
+                metaStartLabel: "Начало", metaStartValue: "2014 · на 15 години",
+                metaKnownLabel: "Разпознаваема с", metaKnownValue: "Моделство · Титли · Milano",
+                metaTitlesLabel: "Акцент 2025–26", metaTitlesValue: "Playboy корица · Мис Елеганс",
+                metaRoleLabel: "Идентичност", metaRoleValue: "Модел · Дизайнер · Актриса",
+                intro1: "От своя първи конкурс на 15 години до корица на Playboy, подиумите на Милано и титлата Мис Елеганс 2026 — нейният път е доказателство, че истинският блясък се изгражда, не се случва.",
+                intro2: "С над десет години опит в модния бизнес, поредица от престижни титли и участие на International Fashion Festival Milano 2026, Анастасия Събева е лице, което България заслужава да види на световната сцена.",
+                caption1: "Дванадесет години пред камерата — всеки кадър е урок, всяка титла е стъпало нагоре.",
+                section1Title: "Профил, изграден с постоянство",
+                section1P1: "Анастасия Събева е модел, чийто път в модната индустрия започва още в тийнейджърска възраст. На 15 години участва в първия си конкурс и печели трето място — начало, което разпалва амбиция, а не я гаси.",
+                section1P2: "Следват второ и трето място в последователни конкурси, участие в Мис Туризъм 2015 и още две надпревари същата година. Всяка поява е нова репетиция за голямата сцена.",
+                quote: "„Бих искала да представям България на международен и световен конкурс — и да снимам за дизайнери тук и в чужбина.\"",
+                section2Title: "Playboy, Супер Модел и Мис Елеганс",
+                section2P1: "2017 г. е повратна точка — участието в Мис Плеймейт поставя Анастасия на картата на сериозната модна сцена. Осем години по-късно, през 2025 г., тя е на корицата на Playboy и с личен календар — признание, което говори само за себе си.",
+                section2P2: "Титлата Супер Модел 2025 и Мис Елеганс 2026 затвърждават образа: не е въпрос на шанс, а на характер, работа и неугасваща страст към съвършенството.",
+                caption2: "Мис Елеганс 2026 — елегантността като философия, не само като стил.",
+                caption3: "International Fashion Festival Milano 2026 — България на световния подиум.",
+                section3Title: "Лице на организации и медии",
+                section3P1: "Анастасия е избирана за лице на организации и медии — доверие, което се печели единствено с консистентност, професионализъм и визия. Нейното присъствие надхвърля фотосесията — то е послание.",
+                section3P2: "Милано 2026 е логично продължение: International Fashion Festival е сцената, на която световната мода открива следващото голямо лице. Анастасия вече е там.",
+                section4Title: "Дизайнер, актриса и мечтател с план",
+                section4P1: "Зад обектива и зад прожектора се крие жена с конкретни цели. Анастасия иска да стане дизайнер — да създава облеклата, не само да ги носи. Актьорското майсторство е още един хоризонт, към който гледа с нескрит интерес.",
+                section4P2: "По образование завършена специалност Туризъм, тя носи в себе си усещане за свят без граници — и го изразява с всяка стъпка на подиума и всяка поза пред камерата.",
+                caption4: "Playboy корица 2025 — моментът, когато страстта среща международното признание.",
+                section5Title: "Следващата глава: световната сцена",
+                section5P1: "Анастасия Събева не е само поредното красиво лице в модната индустрия. Тя е проект в ход — жена, която последователно, стъпало по стъпало, гради платформата, от която ще представи България пред света.",
+                section5P2: "Нейното послание е просто: България има лица, способни да заемат световната сцена. Тя е едно от тях.",
+                footer: "Луксозен дигитален портрет на Анастасия Събева · High-Life Digital Portrait Series"
+            },
+            en: {
+                kicker: "High-Life / Digital Portrait",
+                title: "Anastasia Sabeva: Elegance, Ambition, Glamour",
+                deck: "A luxurious digital portrait of a woman who turned her passion for fashion into a mission, the runway into her natural habitat, and her dream of the world stage into her very next step.",
+                theme: "Theme",
+                badge: "Model · Miss Elegance · Playboy",
+                lead: "For some women fashion is clothing. For Anastasia Sabeva fashion is a language — one she uses to declare who she is, where she is headed, and what she is capable of achieving.",
+                metaStartLabel: "Career start", metaStartValue: "2014 · age 15",
+                metaKnownLabel: "Known for", metaKnownValue: "Modelling · Titles · Milano",
+                metaTitlesLabel: "Highlights 2025–26", metaTitlesValue: "Playboy cover · Miss Elegance",
+                metaRoleLabel: "Identity", metaRoleValue: "Model · Designer · Actress",
+                intro1: "From her very first contest at the age of 15 to a Playboy cover, the runways of Milan, and the title of Miss Elegance 2026 — her journey proves that true glamour is built, not stumbled upon.",
+                intro2: "With over a decade of experience in the fashion world, a string of prestigious titles, and a debut at the International Fashion Festival Milano 2026, Anastasia Sabeva is the face Bulgaria deserves to see on the world stage.",
+                caption1: "Twelve years in front of the camera — every frame a lesson, every title a step higher.",
+                section1Title: "A profile built with persistence",
+                section1P1: "Anastasia Sabeva's journey in the fashion industry began in her teens. At 15 she entered her first contest and claimed third place — a start that ignited ambition rather than satisfying it.",
+                section1P2: "She followed with second and third place in successive contests, took part in Miss Tourism 2015 and two further competitions that same year. Every appearance was a rehearsal for the bigger stage ahead.",
+                quote: "\"I would love to represent Bulgaria in an international and world contest — and to shoot for designers both here and abroad.\"",
+                section2Title: "Playboy, Super Model and Miss Elegance",
+                section2P1: "2017 was a turning point — competing in Miss Playmate placed Anastasia firmly on the map of serious modelling. Eight years later, in 2025, she graced the cover of Playboy with a personal calendar to match — recognition that speaks for itself.",
+                section2P2: "The titles of Super Model 2025 and Miss Elegance 2026 confirm the picture: this is not a matter of luck, but of character, hard work, and a relentless passion for excellence.",
+                caption2: "Miss Elegance 2026 — elegance as a philosophy, not merely a style.",
+                caption3: "International Fashion Festival Milano 2026 — Bulgaria on the world runway.",
+                section3Title: "Face of organisations and media",
+                section3P1: "Anastasia has been chosen as the face of organisations and media — trust that is earned only through consistency, professionalism, and vision. Her presence goes beyond the photo shoot — it carries a message.",
+                section3P2: "Milan 2026 is the natural next step: the International Fashion Festival is the stage where the world of fashion discovers its next great face. Anastasia is already there.",
+                section4Title: "Designer, actress and dreamer with a plan",
+                section4P1: "Behind the lens and beyond the spotlight stands a woman with clear goals. Anastasia wants to become a designer — to create the garments, not only wear them. Acting is another horizon she pursues with undisguised interest.",
+                section4P2: "Educated in Tourism, she carries within her a sense of a world without borders — and expresses it with every step on the runway and every pose before the camera.",
+                caption4: "Playboy cover 2025 — the moment passion meets international recognition.",
+                section5Title: "The next chapter: the world stage",
+                section5P1: "Anastasia Sabeva is not just another beautiful face in the fashion industry. She is a project in motion — a woman building, step by step, the platform from which she will represent Bulgaria before the world.",
+                section5P2: "Her message is simple: Bulgaria has faces capable of owning the world stage. She is one of them.",
+                footer: "Luxurious digital portrait of Anastasia Sabeva · High-Life Digital Portrait Series"
+            }
+        };
+
+        function applyLanguage(lang) {
+            const dict = translations[lang] || translations.bg;
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key] !== undefined) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            // Специално обновяване на h1 (защото съдържа <em>)
+            const h1 = document.querySelector('h1');
+            if (lang === 'bg') {
+                h1.innerHTML = 'Анастасия Събева:<br><em>Елегантност, Амбиция, Блясък</em>';
+            } else {
+                h1.innerHTML = 'Anastasia Sabeva:<br><em>Elegance, Ambition, Glamour</em>';
+            }
+
+            localStorage.setItem('anastasia-lang', lang);
+            updateMusicLabel(!music.paused);
+        }
+
+        // Зареждане на запазен език
+        const savedLang = localStorage.getItem('anastasia-lang') || 'bg';
+        langSelect.value = savedLang;
+        applyLanguage(savedLang);
+
+        langSelect.addEventListener('change', (e) => {
+            applyLanguage(e.target.value);
+        });
+
+        // Първоначално обновяване на етикета за музика
+        updateMusicLabel(false);
+    });
+</script>
+</body>
+</html>
